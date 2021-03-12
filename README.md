@@ -1,2 +1,2 @@
 # On11-TodasEmTech-s7-API-GET
-Introdução à API: GET // Servidor, Endpoints, Rotas, Status Code, curl, postman
+Turma Online 11 - Todas em Tech | Back-end | 2021 | Introdução à API: GET
