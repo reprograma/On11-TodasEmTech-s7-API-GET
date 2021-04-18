@@ -22,9 +22,11 @@ npm install nodemon
 npm start
 ```
 
-Quando usamos o nodemon devemos modificar nossos **scripts de start** dentro do **package.json
+Quando usamos o nodemon devemos modificar nossos **scripts de start** dentro do **package.json**
 
-"start": "nodemon server.js"**
+````JavaScrypt
+"start": "nodemon server.js"
+````
 
 **Para instalar dependências de um projeto com node.js que já foi iniciado**
 
