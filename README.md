@@ -110,8 +110,8 @@ Retorna nome, sigla e cidades de uma sigla especifica
 O exercício para o lar devera ser feito dentro da pasta servidor-paraolar. Lá você devera criar um novo servidor e configurar sua porta e criar essas duas rotas. 
 
 ```bash
-\--📂 On11-TodasEmTech-s7-API-GET
-		 |
+		\--📂 On11-TodasEmTech-s7-API-GET
+			|
 			\--📂meu-primeiro-servidor
 			|
 			\--📂meu-primeiro-servidor
