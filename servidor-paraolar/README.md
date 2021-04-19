@@ -1,47 +1,28 @@
-# Para o Lar - ReprogramaFlix
+# Para o lar!
 
-Crie uma API que Retorne os Filmes e Séries disponíveis no catalogo.
+Para o lar ficam as seguintes rotas das demandas de negócio:
 
-Deve ser possível fazer pesquisa por Gênero, ID e Nome.
+### [GET] "/estados/todos"
 
-## Rotas
+Retorna lista completa de estados-cidades
 
-### [GET] "/catalogo"
+### [GET] "/estados/{sigla}"
 
-Retorna todos os filmes e séries
+Retorna nome, sigla e cidades de uma sigla especifica
 
-### [GET] "/catalogo/{gênero}"
+O exercício para o lar devera ser feito dentro da pasta servidor-paraolar. Lá você devera criar um novo servidor e configurar sua porta e criar essas duas rotas. 
 
-Retorna todos os filmes e séries de um dado gênero
+```bash
+		\--📂 On11-TodasEmTech-s7-API-GET
+			|
+			\--📂meu-primeiro-servidor
+			|
+			\--📂meu-primeiro-servidor
+			|				
+			**\--📂servidor-paraolar
+			    |   server.js
+			    📂---data
+			    |       estados-cidades.json**
+```
 
-### [GET] "/catalogo/filmes"
-
-Retorna todos os filmes
-
-### [GET] "/catalogo/filmes/{id}"
-
-Retorna filme pelo ID
-
-### [GET] "/catalogo/filmes/{nome}"
-
-Retorna filme pelo nome
-
-### [GET] "/catalogo/filmes/{gênero}"
-
-Retorna todos os filmes de um dado gênero
-
-### [GET] "/catalogo/series"
-
-Deve retornar todas as séries
-
-### [GET] "/catalogo/series/{id}"
-
-Retorna séries pelo ID
-
-### [GET] "/catalogo/series/{nome}"
-
-Retorna séries pelo nome
-
-### [GET] "/catalogo/series/{gênero}"
-
-Retorna todos as séries de um dado gênero
+Observe que o json de estados-cidades, está um pouco mais simples! **O foco desse exercício é que vocês consigam entender bem quais são os comandos necessários para criar um servidor com node.js**
