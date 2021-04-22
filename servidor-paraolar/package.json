@@ -1,7 +1,7 @@
 {
-  "name": "servidor-em-aula",
+  "name": "servidor-paraolar",
   "version": "1.0.0",
-  "description": "",
+  "description": "Para o lar ficam as seguintes rotas das demandas de negócio:",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
