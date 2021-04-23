@@ -24,16 +24,22 @@ app.get("/filmes/filtro", (request, response)=>{
 })
 
 //"/filmes:id" pesquisa por id, path params
-app.get("/filmes/:identificacao", (request, response)=>{
-    const idRequisitado = request.params.identificacao //rebendo o request ja com a identificação direto na URL
-
-    response.status(200).json(filmes.find(filme => filme.id == idRequisitado))
+app.get("/filmes/:id", (request, response)=>{
+    const id = request.params.id //rebendo o request ja com a identificação direto na URL
+    response.status(200).json(filmes.find(filme => filme.id == id))
     
 })
 
-app.get("/estados/todos", (request, response)=>{
+app.get("/estados/all", (request, response)=>{
     response.status(200).json(estadosCidades)
 })
+
+// retorna nome, sigla e cidades de uma sigla especifica 
+app.get("/estados/filtro", (request, response) => {
+    const siglaRequerida = request.query.sigla;
+    response.status(200).send(estadosCidades.find(estado => estado.sigla == siglaRequerida));
+});
+
 
 //retorna somente nome e sigla de cada estados
 app.get("/estados", (request, response)=>{
@@ -51,5 +57,5 @@ app.get("/estados", (request, response)=>{
 })
 
 app.listen(8080, ()=>{
-    console.log("Uhull ta fruncionando na porta 8080")
+    console.log("Está funcionando na porta 8080")
 })
