@@ -1,13 +1,21 @@
 {
   "name": "meu-primeiro-servidor",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
+=======
+  "description": "meu primeiro servidor",
+>>>>>>> 68f589f7937a7e8aec71c07ff936ae324f656e04
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
+<<<<<<< HEAD
   "author": "",
+=======
+  "author": "Ana Luiza",
+>>>>>>> 68f589f7937a7e8aec71c07ff936ae324f656e04
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
