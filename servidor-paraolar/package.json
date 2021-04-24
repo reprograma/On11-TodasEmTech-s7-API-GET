@@ -1,0 +1,15 @@
+{
+  "name": "servidor-paraolar",
+  "version": "1.0.0",
+  "description": "resolução da atividade para o lar dessa semana",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Eny Martins",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
