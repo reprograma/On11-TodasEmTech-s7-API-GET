@@ -1,0 +1,16 @@
+{
+  "name": "servidor-paraolar",
+  "version": "1.0.0",
+  "description": "Exercicio reprograma",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Ana Claudia do Nascimento",
+  "license": "ISC"
+}
