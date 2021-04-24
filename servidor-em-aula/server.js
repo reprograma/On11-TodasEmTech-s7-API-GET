@@ -1,55 +1,58 @@
-const filmes = require("./data/ghibli.json") //importando o json da ghibli
-const estadosCidades = require("./data/estados-cidades.json")
+const filmes = require('./data/ghibli.json');
+const estadosCidades = require('./data/estados-cidades.json');
 
-const express = require("express") //importando express
-const app = express() //executando express
+const express = require('express');
+const app = express();
 
-app.get("/", (request, response)=>{ 
-    response.status(200).json([{
-        "mensagem":"Salve, mundão!"
-    }])
+app.get("/filmes", (request, response) => {
+  console.log(request.url)
+  response.status(200).json(filmes)
 })
 
-//"/filmes" retorna lista de todos os filmes
-app.get("/filmes", (request, response)=>{
-    console.log(request.url)
-    response.status(200).json(filmes)
+app.get("/filmes/filtro", (request, response) => { //para query paramns não precisa do :
+  console.log(request.url)
+  const titulo = request.query.titulo //query params serve para string e elementos mais complexos; titulo é um nome escolhido como rota para receber o request do title
+  response.status(200).json(filmes.find(filme => filme.title == titulo))
 })
 
-//"/filmes/filtro" pesquisa por nome, usando query params
-app.get("/filmes/filtro", (request, response)=>{
-    const tituloRequisitado = request.query.titulo //recebendo request acessando as query enviadas e aceitando somente aquela chave titulo
-                            //ARRAY.find(ELEMENTO => titulo dentro de ELEMENTO tem que ser igual ao titulo requisitado) ele retorna o primeiro que encontrar
-    response.status(200).json(filmes.find(filme => filme.title == tituloRequisitado))
+app.get("/estados/todos", (request, response) => {
+  response.status(200).json(estadosCidades)
 })
 
-//"/filmes:id" pesquisa por id, path params
-app.get("/filmes/:identificacao", (request, response)=>{
-    const idRequisitado = request.params.identificacao //rebendo o request ja com a identificação direto na URL
-
-    response.status(200).json(filmes.find(filme => filme.id == idRequisitado))
-    
+app.get("/estados", (request, response) => {
+  let listaEstados = estadosCidades.estados
+  const estado = listaEstados.map(props => {
+        let {nome, sigla} = props
+        return {nome, sigla}
+      })
+  response.status(200).send(estado);
 })
 
-app.get("/estados/todos", (request, response)=>{
-    response.status(200).json(estadosCidades)
-})
+//ou
 
-//retorna somente nome e sigla de cada estados
-app.get("/estados", (request, response)=>{
-    let listaEstados = estadosCidades.estados
-    let estadosJson = []
-    //ARRAY.forEach(ELEMENTO =>{ FUNÇAO })
-    listaEstados.forEach(estado =>{
-        //ARRAY.push
-        estadosJson.push({
-            "sigla":estado.sigla,
-            "nome":estado.nome
-        })
+/*
+app.get("/estados", (request, response) => {
+  let listaEstados = estadosCidades.estados
+  let estadosJson = []
+  listaEstados.forEach(i => {
+    // console.log(i.sigla)
+    // console.log(i.nome)
+    estadosJson.push({
+      "sigla":i.sigla,
+      "nome":i.nome
     })
-    response.status(200).send(estadosJson)
+  })
+  response.status(200).send(estadosJson);
+})
+*/
+
+
+app.get("/filmes/:id", (request, response) => { //para path params, passamos a rota com :nome
+  console.log(request.url)
+  const id = request.params.id //path params serve para os um único caractere como um id
+  response.status(200).send(filmes.find(filme => filme.id == id))   //envia sem transformar em json, se já for um json n precisa usar .json; Usamos find() para encontrar o id na lista filmes, mas poderia usar outros métodos 
 })
 
-app.listen(8080, ()=>{
-    console.log("Uhull ta fruncionando na porta 8080")
+app.listen(6060, () => {
+  console.log('Server funcionando na porta 6060')
 })
