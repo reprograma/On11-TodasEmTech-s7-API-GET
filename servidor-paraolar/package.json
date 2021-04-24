@@ -1,0 +1,16 @@
+{
+  "name": "servidor-paraolar",
+  "version": "1.0.0",
+  "description": "exercicio da semana 7",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "anaisa mayara teodoro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
