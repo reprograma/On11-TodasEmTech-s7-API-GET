@@ -14,6 +14,13 @@
         response.status(200).json(estados.find(estado => estado.sigla == siglaEstado));
     })
 
+    app.get("/estados/:id", (request, response)=>{
+        const idRequisitado = request.params.id
+    
+        response.status(200).json(estados.find(estado => estado.sigla == idRequisitado))
+        
+    })
+
     app.listen(8080, ()=> {
         console.log("Verificando porta 8080");
     })
