@@ -1,13 +1,13 @@
 {
-  "name": "meu-primeiro-servidor",
+  "name": "servidor-paraolar",
   "version": "1.0.0",
-  "description": "meu primeiro serve",
+  "description": "Para o lar ficam as seguintes rotas das demandas de negócio:",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
-  "author": "Beatriz",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

@@ -1,33 +1,86 @@
 const filmes = require("./data/ghibli.json")
+const { estados }  = require("./data/estados-cidades.json");
 
-const express = require("express")
-const app = express()
 
-app.get("/", (request, response)=>{
-    response.status(200).json([{
-        "mensagem":"Salve, mundão!"
+const express = require('express');
+const { response, request } = require("express");
+const app = express();
+
+
+const port = 3031;
+
+app.get("/", (req, res) => {
+    res.status(200).json([{
+        "mensagem" : "Blz"
     }])
 })
 
-//"/filmes" retorna lista de todos os filmes
-app.get("/filmes", (request, response)=>{
-    console.log(request.url)
-    response.status(200).json(filmes)
+app.get("/filmes", (request, res) => {
+    console.log(require.url);
+    res.status(200).send(filmes);
 })
 
-app.get("/filmes/filtro", (request, response)=>{
-    const tituloRequisitado = request.query.titulo
 
-    response.status(200).json(filmes.find(filme => filme.title == tituloRequisitado))
+
+
+app.get("/filmes/filtro", (request, response) => {
+    console.log(request.url);
+    const titulo = request.query.titulo;
+    response.status(200).send(filmes.find(filme => filme.title == titulo));
 })
 
-app.get("/filmes/:identificacao", (request, response)=>{
-    const idRequisitado = request.params.identificacao
+//===========================================
+// ESTADOS
+//============================================
 
-    response.status(200).json(filmes.find(filme => filme.id == idRequisitado))
-    
+
+app.get("/estados/todos" , (req, res) => {
+    res.status(200).json(estados);
+});
+
+
+app.get("/estados" , (request, response) => {
+
+    const nomeSiglas = estados.map(estado => {
+       const {nome, sigla} = estado;
+       return { nome, sigla } ;
+    });
+
+    response.status(200).json(nomeSiglas);
 })
 
-app.listen(8080, ()=>{
-    console.log("Uhull ta fruncionando na porta 8080")
+
+
+// atencao esse corno trava td que vier abaixo dele
+app.get("/filmes/:id", (request, response) => {
+    console.log(request.url);
+    const id = request.params.id
+    response.status(200).send(filmes.find(filme => filme.id == id));
+})
+
+
+app.get("/estados/:sigla", (request, response) => {
+    const siglaReq = request.params.sigla;
+    const resEstado = estados.find(estado => estado.sigla == siglaReq);
+
+    if (resEstado)  response.status(200).send(resEstado);
+    else response.status(404).send('nao encontrado');
+
+})
+
+app.get("/estados/cidades/:sigla", (request, response) => {
+    const siglaReq = request.params.sigla;
+    const resEstado = estados.find(estado => estado.sigla == siglaReq);
+
+    if (resEstado)  response.status(200).send(resEstado.cidades);
+    else response.status(404).send('nao encontrado');
+
+})
+
+
+
+
+
+app.listen(port, () => {
+    console.log(`rodando na porta : ${port}`)
 })
