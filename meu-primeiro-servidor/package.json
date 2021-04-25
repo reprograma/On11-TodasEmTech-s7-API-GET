@@ -7,12 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
+<<<<<<< HEAD
   "author": "Karla Thamiris Leitão",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
+=======
+  "author": "Ana Luiza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+>>>>>>> upstream/main
     "nodemon": "^2.0.7"
   }
 }
