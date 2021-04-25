@@ -1,0 +1,296 @@
+[
+    {
+        "id": "1",
+        "title": "Game of Thrones",
+        "totalSeasons": "8",
+        "genre": [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Fantasy",
+            "Romance"
+        ],
+        "writers": [
+            "David Benioff",
+            "D.B. Weiss"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SX300.jpg",
+        "actors": [
+            "Peter Dinklage",
+            "Lena Headey",
+            "Emilia Clarke",
+            "Kit Harington"
+        ],
+        "ratings": {
+            "rating": "9.3",
+            "likes": "1679892"
+        }
+    },
+    {
+        "id": "2",
+        "title": "Stranger Things",
+        "totalSeasons": "3",
+        "genre": [
+            "Drama",
+            "Fantasy",
+            "Horror",
+            "Mystery",
+            "Sci-Fi",
+            "Thriller"
+        ],
+        "writers": [
+            "Matt Duffer",
+            "Ross Duffer"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_SX300.jpg",
+        "actors": [
+            "Winona Ryder",
+            "David Harbour",
+            "Finn Wolfhard",
+            "Millie Bobby Brown"
+        ],
+        "ratings": {
+            "rating": "8.8",
+            "likes": "769106"
+        }
+    },
+    {
+        "id": "3",
+        "title": "The Boys",
+        "totalSeasons": "3",
+        "genre": [
+            "Action",
+            "Comedy",
+            "Crime",
+            "Sci-Fi"
+        ],
+        "writers": [
+            "Eric Kripke"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BN2JjNmFjZmItMDVlMS00NzExLWJkOTMtY2U3ZDRiZGUyMTdhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+        "actors": [
+            "Karl Urban",
+            "Jack Quaid",
+            "Antony Starr",
+            "Erin Moriarty"
+        ],
+        "ratings": {
+            "rating": "8.7",
+            "likes": "162770"
+        }
+    },
+    {
+        "id": "4",
+        "title": "This Is Us",
+        "totalSeasons": "4",
+        "genre": [
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "writers": [
+            "Dan Fogelman"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BMDM2YTMzMWMtNmFhZi00ZWY4LTk1ZmUtMWExNzg3NDZmMTY4XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg",
+        "actors": [
+            "Milo Ventimiglia",
+            "Mandy Moore",
+            "Sterling K. Brown",
+            "Chrissy Metz"
+        ],
+        "ratings": {
+            "rating": "8.7",
+            "likes": "94108"
+        }
+    },
+    {
+        "id": "5",
+        "title": "How to Get Away with Murder",
+        "totalSeasons": "6",
+        "genre": [
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "writers": [
+            "Peter Nowalk"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BZDQ5ZDRhMWItNjA5Ni00MDhiLTgwN2EtZjFkYzgzNjBhZTIyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+        "actors": [
+            "Viola Davis",
+            "Billy Brown",
+            "Jack Falahee",
+            "Aja Naomi King"
+        ],
+        "ratings": {
+            "rating": "8.1",
+            "likes": "120538"
+        }
+    },
+    {
+        "id": "6",
+        "title": "Little Fires Everywhere",
+        "totalSeasons": "1",
+        "genre": [
+            "Drama"
+        ],
+        "writers": [
+            "Celeste Ng"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BNmEyZjc3MzgtZjU1OS00MDlkLThmOTMtODE5OTlmYmUxMTRmXkEyXkFqcGdeQXVyMTM1NjgyNDI@._V1_SX300.jpg",
+        "actors": [
+            "Kerry Washington",
+            "Lexi Underwood",
+            "Reese Witherspoon",
+            "Joshua Jackson"
+        ],
+        "ratings": {
+            "rating": "7.8",
+            "likes": "19360"
+        }
+    },
+    {
+        "id": "7",
+        "title": "Lucifer",
+        "totalSeasons": "5",
+        "genre": [
+            "Crime",
+            "Drama",
+            "Fantasy"
+        ],
+        "writers": [
+            "Tom Kapinos"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BNzY1YjIxOGMtOTAyZC00YTcyLWFhMzQtZTJkYTljYzU0MGRlXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_SX300.jpg",
+        "actors": [
+            "Tom Ellis",
+            "Lauren German",
+            "Kevin Alejandro",
+            "D.B. Woodside"
+        ],
+        "ratings": {
+            "rating": "8.2",
+            "likes": "211722"
+        }
+    },
+    {
+        "id": "8",
+        "title": "Anne with an E",
+        "totalSeasons": "3",
+        "genre": [
+            "Drama"
+        ],
+        "writers": [
+            "Moira Walley-Beckett"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BNThmMzJlNzgtYmY5ZC00MDllLThmZTMtNTRiMjQwNmY0NmRhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+        "actors": [
+            "Amybeth McNulty",
+            "Geraldine James",
+            "R.H. Thomson",
+            "Dalila Bela"
+        ],
+        "ratings": {
+            "rating": "8.7",
+            "likes": "30924"
+        }
+    },
+    {
+        "id": "9",
+        "title": "Breaking Bad",
+        "totalSeasons": "5",
+        "genre": [
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "writers": [
+            "Vince Gilligan"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+        "actors": [
+            "Bryan Cranston",
+            "Anna Gunn",
+            "Aaron Paul",
+            "Betsy Brandt"
+        ],
+        "ratings": {
+            "rating": "9.5",
+            "likes": "1391850"
+        }
+    },
+    {
+        "id": "10",
+        "title": "Westworld",
+        "totalSeasons": "4",
+        "genre": [
+            "Drama",
+            "Mystery",
+            "Sci-Fi"
+        ],
+        "writers": [
+            "Lisa Joy",
+            "Jonathan Nolan"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTRmYzNmOTctZjMwOS00ODZlLWJiZGQtNDg5NDY5NjE3MTczXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
+        "actors": [
+            "Thandie Newton",
+            "Jeffrey Wright",
+            "Ed Harris",
+            "Evan Rachel Wood"
+        ],
+        "ratings": {
+            "rating": "8.7",
+            "likes": "410393"
+        }
+    },
+    {
+        "id": "11",
+        "title": "The Handmaid's Tale",
+        "totalSeasons": "4",
+        "genre": [
+            "Drama",
+            "Sci-Fi",
+            "Thriller"
+        ],
+        "writers": [
+            "Bruce Miller"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTU0MTI0MDAyM15BMl5BanBnXkFtZTgwMDg5MzYyNTM@._V1_SX300.jpg",
+        "actors": [
+            "Elisabeth Moss",
+            "Amanda Brugel",
+            "Madeline Brewer",
+            "Max Minghella"
+        ],
+        "ratings": {
+            "rating": "8.5",
+            "likes": "160662"
+        }
+    },
+    {
+        "id": "12",
+        "title": "The Office",
+        "totalSeasons": "9",
+        "genre": [
+            "Comedy"
+        ],
+        "writers": [
+            "Greg Daniels",
+            "Ricky Gervais",
+            "Stephen Merchant"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BMDNkOTE4NDQtMTNmYi00MWE0LWE4ZTktYTc0NzhhNWIzNzJiXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg",
+        "actors": [
+            "Rainn Wilson",
+            "John Krasinski",
+            "Jenna Fischer",
+            "Leslie David Baker"
+        ],
+        "ratings": {
+            "rating": "8.9",
+            "likes": "380944"
+        }
+    }
+]
