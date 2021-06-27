@@ -1,0 +1,23 @@
+{
+  "name": "on11-todasemtech-s7-api-get",
+  "version": "1.0.0",
+  "description": "Turma Online 11 - Todas em Tech | Back-end | 2021 | Introdução à API: GET",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deisiane16/On11-TodasEmTech-s7-API-GET.git"
+  },
+  "author": "Deisiane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deisiane16/On11-TodasEmTech-s7-API-GET/issues"
+  },
+  "homepage": "https://github.com/Deisiane16/On11-TodasEmTech-s7-API-GET#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
